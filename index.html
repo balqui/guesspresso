@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8">
+<script type="text/javascript" src="brython.js"></script>
+<script type="text/javascript" src="brython_stdlib.js"></script>
+</head>
+
+<body onload="brython(1)">
+
+<label id="name"><h2>GuessPresso</h2></label>
+<label id="info"><h3>Expression Evaluation Game</h3></label>
+<br>
+<br>
+<label id="goal">Expression to evaluate:</label>
+<br>
+<textarea id="in" autocomplete="off" 
+placeholder="Write here the expression to be evaluated." 
+cols=60></textarea>
+<br>
+<br>
+<label id="guess">Guess at outcome:</label>
+<br>
+<textarea id="out" autocomplete="off" 
+placeholder="Write here a guess of the result of the evaluation." 
+cols=60></textarea>
+<br>
+<br>
+<button id="done">Done: check it please.</button>
+<br>
+<br>
+<button id="about">About...</button>
+<br>
+<br>
+<script type="text/python" src="guesspresso.py"></script>
+</body>
+
+</html>
+
