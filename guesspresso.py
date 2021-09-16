@@ -18,7 +18,7 @@ def about(ev):
 def done(ev):
 	"capture contents of in and out, eval in, compare to out, choose alert contents"
 	# ~ alert("Done called")
-	e = ''.join(document["in"].value.split())
+	e = ' '.join(document["in"].value.split('\n'))
 	# ~ alert("read: " + e)
 	try:
 		v = repr(eval(e))
